@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent">
+
+    <ScrollView
+
+        android:background="@drawable/rect_boundary1"
+        android:layout_marginBottom="20sp"
+        android:layout_marginRight="50sp"
+        android:layout_marginTop="20sp"
+        android:layout_marginLeft="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="40sp"
+                android:layout_margin="15sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="10sp"
+                android:text="New Employee"
+                android:textColor="#064C7C"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0.5sp"
+                android:layout_marginLeft="15sp"
+                android:layout_marginRight="15sp"
+                android:background="#323d53"></LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:gravity="center_vertical"
+                android:text="Method"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+            <RelativeLayout
+                android:background="@drawable/rect_boundary1"
+                android:layout_marginRight="20sp"
+                android:layout_marginLeft="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+                <Spinner
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></Spinner>
+
+                <ImageView
+                    android:padding="15sp"
+                    android:src="@drawable/drop_down"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_width="50sp"
+                    android:layout_height="match_parent" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:gravity="center_vertical"
+                android:text="Employee Id"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <EditText
+                android:paddingLeft="10sp"
+                android:hint=""
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/rect_boundary1" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <EditText
+                android:paddingLeft="10sp"
+                android:hint=""
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/rect_boundary1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:gravity="center_vertical"
+                android:text="Contact Number"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+            <EditText
+                android:paddingLeft="10sp"
+                android:hint=""
+                android:layout_width="match_parent"
+                android:layout_height="50sp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginRight="20sp"
+                android:background="@drawable/rect_boundary1" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="15sp"
+                android:layout_marginBottom="15sp"
+                android:gravity="center_vertical"
+                android:text="Type"
+                android:textColor="#fff"
+                android:textSize="18sp" />
+
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+
+
+                <RelativeLayout
+
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+
+                    <Spinner
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></Spinner>
+
+
+                    <ImageView
+                        android:padding="10sp"
+                        android:src="@drawable/drop_down"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="40sp"
+                        android:layout_height="match_parent" />
+                </RelativeLayout>
+
+                <TextView
+                    android:gravity="center"
+                    android:textColor="#fff"
+                    android:background="#064C7C"
+                    android:text="New Type"
+                    android:layout_weight="0.7"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:weightSum="3"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="60sp">
+
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:textColor="#fff"
+                    android:background="#0175c4"
+                    android:text="Upload"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent" />
+
+                <TextView
+                    android:textColor="#fff"
+                    android:background="#064C7C"
+                    android:text="Save"
+                    android:textSize="20sp"
+                    android:gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginRight="20sp"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/show_right"
+        android:padding="15sp"
+        android:src="@drawable/left"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="50sp"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/show_hide"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@drawable/background"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="280sp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:padding="20sp"
+            android:src="@drawable/right"
+            android:id="@+id/hide_right"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+
+        <ScrollView
+            android:layout_weight="4"
+            android:layout_width="0sp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/past_invoices"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_light_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/past_invoice"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Past Invoices"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/other_charges"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/other_charge"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Other Charges"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/speed_dial"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/speed_diel"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Speed Dial Keys"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/manage_reason"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/mange_reson"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Manage Reasons"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/drawe_transaction"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/drawer_transaction"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Drawer Transaction"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/manage_emp"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/mange_employe"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Manage Employee"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/cancel_credit"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/cancel_credit"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Cancel Credit Note"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+
+        android:id="@+id/fab"
+        android:layout_width="70sp"
+        android:src="@drawable/plus"
+        android:padding="10sp"
+        android:layout_margin="20sp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_height="70sp" />
+
+</RelativeLayout>

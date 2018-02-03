@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pointofsale">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".controller.AppController"
+        android:largeHeap="true"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Panvik"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".start.MainActivity"
+            android:screenOrientation="sensorLandscape">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".start.SelectBusinessType"
+            android:screenOrientation="sensorLandscape" />
+
+        <activity
+            android:screenOrientation="sensorLandscape"
+            android:name=".start.MainDashboard"
+            android:label="@string/title_activity_main_dashboard"
+            android:theme="@style/AppTheme"></activity>
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="cfe2ed61a9010818370d1fe539f8f80170f87acb" />
+
+    </application>
+
+</manifest>

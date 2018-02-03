@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/relative2"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<ListView
+    android:layout_marginBottom="20sp"
+    android:layout_marginRight="50sp"
+    android:layout_marginTop="20sp"
+    android:layout_marginLeft="20sp"
+    android:background="@drawable/rect_boundary1"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</ListView>
+
+
+    <ImageView
+        android:id="@+id/show_right"
+        android:padding="15sp"
+        android:src="@drawable/left"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="50sp"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/show_hide"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:background="@drawable/background"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_width="280sp"
+        android:layout_height="match_parent">
+        <ImageView
+            android:padding="20sp"
+            android:src="@drawable/right"
+            android:id="@+id/hide_right"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+
+        <ScrollView
+            android:layout_weight="4"
+            android:layout_width="0sp"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <LinearLayout
+                    android:id="@+id/products"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_light_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/product_download_web"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Products"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/manage_tax"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/manage_tax"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Manage Tax"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/inventory"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/inventory_download"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Inventory"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/price_change"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/price_change"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Price Change"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/view_stock"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/viewstock"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="View Stock"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/return_stock"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/returnstock"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Return Stock"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+                <LinearLayout
+                    android:id="@+id/view_return_stock"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/returnview"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="View Return Stocks"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/supplier"
+                    android:weightSum="5"
+                    android:orientation="horizontal"
+                    android:layout_margin="5sp"
+                    android:background="@drawable/rect_dark_yellow_bg"
+                    android:layout_width="match_parent"
+                    android:layout_height="50sp">
+
+                    <ImageView
+                        android:padding="5sp"
+                        android:src="@drawable/supplier"
+                        android:layout_weight="1.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                    <TextView
+                        android:textSize="17sp"
+                        android:textColor="#fff"
+                        android:paddingLeft="5sp"
+                        android:gravity="center_vertical"
+                        android:text="Supplier"
+                        android:layout_weight="3.5"
+                        android:layout_width="0sp"
+                        android:layout_height="match_parent" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</RelativeLayout>

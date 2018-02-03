@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:weightSum="5"
+    android:background="@drawable/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.pointofsale.start.MainActivity">
+
+<LinearLayout
+    android:layout_weight="1"
+    android:layout_width="match_parent"
+    android:layout_height="0sp"></LinearLayout>
+
+
+    <ImageView
+
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp" />
+    
+    <TextView
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#064C7C"
+        android:gravity="center"
+        android:text="Panvik"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp" />
+    
+</LinearLayout>

@@ -1,0 +1,406 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="6"
+    android:id="@+id/linear"
+    android:background="@drawable/background"
+    tools:context="com.pointofsale.fragment.InvoiceFragment">
+
+    <LinearLayout
+        android:weightSum="13"
+        android:orientation="horizontal"
+        android:background="#455169"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0sp">
+
+        <ImageView
+            android:id="@+id/nav"
+            android:padding="15sp"
+            android:src="@drawable/menu"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:gravity="center"
+            android:textColor="#fff"
+            android:text=""
+            android:layout_weight="2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:textColor="#fff"
+
+            android:layout_weight="2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+        <TextView
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_weight="2"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/search"
+            android:padding="10sp"
+            android:src="@drawable/search"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+
+        <ImageView
+            android:id="@+id/print"
+            android:padding="10sp"
+            android:src="@drawable/print"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/question"
+            android:padding="10sp"
+            android:src="@drawable/question"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+        <ImageView
+            android:id="@+id/menu"
+            android:padding="10sp"
+            android:src="@drawable/ic_action_overflow"
+            android:layout_weight="1"
+            android:layout_width="0sp"
+            android:layout_height="match_parent" />
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0sp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@drawable/rect_boundary1"
+            android:layout_marginBottom="60sp"
+            android:layout_marginRight="40sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+
+               android:weightSum="10"
+                android:layout_margin="15sp"
+                android:layout_width="match_parent"
+                android:layout_height="50sp">
+
+                <TextView
+                    android:background="@drawable/rect_boundary1"
+                    android:layout_weight="6"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent" />
+
+
+                <ImageView
+                    android:id="@+id/calender"
+                    android:padding="10sp"
+                    android:src="@drawable/calender"
+                    android:layout_weight="1.5"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent" />
+
+                <RelativeLayout
+                    android:background="@drawable/rect_boundary1"
+                    android:layout_weight="2.5"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+
+                        android:overlapAnchor="false"
+android:entries="@array/sales"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"></Spinner>
+
+                    <ImageView
+
+                        android:padding="8sp"
+                        android:src="@drawable/drop_down"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_width="40sp"
+                        android:layout_height="match_parent" />
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+            <ImageView
+
+                android:id="@+id/show_right"
+                android:padding="15sp"
+                android:src="@drawable/left"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_width="40sp"
+                android:layout_height="match_parent" />
+
+            <LinearLayout
+android:id="@+id/show_hide"
+                android:orientation="horizontal"
+                android:weightSum="5"
+                android:background="@drawable/background"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_width="280sp"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:padding="20sp"
+                    android:src="@drawable/right"
+android:id="@+id/hide_right"
+                    android:layout_weight="1"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent" />
+
+
+                <ScrollView
+                    android:layout_weight="4"
+                    android:layout_width="0sp"
+                    android:layout_height="match_parent">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <LinearLayout
+                            android:id="@+id/past_invoices"
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_margin="5sp"
+                            android:background="@drawable/rect_light_yellow_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp">
+
+                            <ImageView
+                                android:padding="5sp"
+                                android:src="@drawable/past_invoice"
+                                android:layout_weight="1.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:textSize="17sp"
+                                android:textColor="#fff"
+                                android:paddingLeft="5sp"
+                                android:gravity="center_vertical"
+                                android:text="Past Invoices"
+                                android:layout_weight="3.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:id="@+id/other_charges"
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_margin="5sp"
+                            android:background="@drawable/rect_dark_yellow_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp">
+
+                            <ImageView
+                                android:padding="5sp"
+                                android:src="@drawable/other_charge"
+                                android:layout_weight="1.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:textSize="17sp"
+                                android:textColor="#fff"
+                                android:paddingLeft="5sp"
+                                android:gravity="center_vertical"
+                                android:text="Other Charges"
+                                android:layout_weight="3.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/speed_dial"
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_margin="5sp"
+                            android:background="@drawable/rect_dark_yellow_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp">
+
+                            <ImageView
+                                android:padding="5sp"
+                                android:src="@drawable/speed_diel"
+                                android:layout_weight="1.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:textSize="17sp"
+                                android:textColor="#fff"
+                                android:paddingLeft="5sp"
+                                android:gravity="center_vertical"
+                                android:text="Speed Dial Keys"
+                                android:layout_weight="3.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/manage_reason"
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_margin="5sp"
+                            android:background="@drawable/rect_dark_yellow_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp">
+
+                            <ImageView
+                                android:padding="5sp"
+                                android:src="@drawable/mange_reson"
+                                android:layout_weight="1.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:textSize="17sp"
+                                android:textColor="#fff"
+                                android:paddingLeft="5sp"
+                                android:gravity="center_vertical"
+                                android:text="Manage Reasons"
+                                android:layout_weight="3.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/drawe_transaction"
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_margin="5sp"
+                            android:background="@drawable/rect_dark_yellow_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp">
+
+                            <ImageView
+                                android:padding="5sp"
+                                android:src="@drawable/drawer_transaction"
+                                android:layout_weight="1.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:textSize="17sp"
+                                android:textColor="#fff"
+                                android:paddingLeft="5sp"
+                                android:gravity="center_vertical"
+                                android:text="Drawer Transaction"
+                                android:layout_weight="3.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/manage_emp"
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_margin="5sp"
+                            android:background="@drawable/rect_dark_yellow_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp">
+
+                            <ImageView
+                                android:padding="5sp"
+                                android:src="@drawable/mange_employe"
+                                android:layout_weight="1.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:textSize="17sp"
+                                android:textColor="#fff"
+                                android:paddingLeft="5sp"
+                                android:gravity="center_vertical"
+                                android:text="Manage Employee"
+                                android:layout_weight="3.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/cancel_credit"
+                            android:weightSum="5"
+                            android:orientation="horizontal"
+                            android:layout_margin="5sp"
+                            android:background="@drawable/rect_dark_yellow_bg"
+                            android:layout_width="match_parent"
+                            android:layout_height="50sp">
+
+                            <ImageView
+                                android:padding="5sp"
+                                android:src="@drawable/cancel_credit"
+                                android:layout_weight="1.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                            <TextView
+                                android:textSize="17sp"
+                                android:textColor="#fff"
+                                android:paddingLeft="5sp"
+                                android:gravity="center_vertical"
+                                android:text="Cancel Credit Note"
+                                android:layout_weight="3.5"
+                                android:layout_width="0sp"
+                                android:layout_height="match_parent" />
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+
+                </ScrollView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>
