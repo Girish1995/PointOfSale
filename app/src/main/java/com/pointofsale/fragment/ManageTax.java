@@ -63,6 +63,7 @@ public class ManageTax extends Fragment implements View.OnClickListener {
         fragmentTransaction6.replace(R.id.relative2, fragment6, "");
         fragmentTransaction6.commitAllowingStateLoss();
     }
+
     public void changeColor(LinearLayout linearLayout){
         product.setBackgroundResource(R.drawable.rect_dark_yellow_bg);
         manage_tax.setBackgroundResource(R.drawable.rect_dark_yellow_bg);
